@@ -1,0 +1,8 @@
+@import '~arduino-sass/src/variables';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: $basegray;
+}

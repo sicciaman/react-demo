@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body>
+  <script src="./parser.js"></script>
+  <div id="root">
+    <input id="file-uploader" type="file" onchange="onFileUpload(event)" accept="application/json" />
+    <div id="error-container" class="hide error"></div>
+    <div id="table-container">
+      <!-- table should be here -->
+    </div>
+  </div>
+</body>
+
+<style>
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .error {
+    margin: 1em 0;
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 20px;
+    color: darkred;
+    padding: .5em 1em;
+    font-weight: 600;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+</style>
+
+</html>
